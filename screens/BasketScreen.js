@@ -9,7 +9,7 @@ import {
   selectBasketTotal,
 } from "../features/basketSlice";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { TouchableOpacity } from "react-native-web";
+import { TouchableOpacity } from "react-native";
 import { XCircleIcon } from "react-native-heroicons/solid";
 import { urlFor } from "../sanity";
 import Currency from "react-currency-formatter";
@@ -29,7 +29,6 @@ const BasketScreen = () => {
     }, {});
     setGroupedItemsInBasket(groupedItems);
   }, [items]);
-  console.log(groupedItemsInBasket);
   return (
     <SafeAreaView className="flex-1 bg-white">
       <View className="flex-1 bg-gray-100">
